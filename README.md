@@ -1,7 +1,7 @@
 # Discrete Fourier Transform
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ssobue_discrete-fourier-transform&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ssobue_discrete-fourier-transform&branch=master)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ssobue_discrete-fourier-transform&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ssobue_discrete-fourier-transform&branch=master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ssobue_discrete-fourier-transform&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ssobue_discrete-fourier-transform&branch=main)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ssobue_discrete-fourier-transform&metric=coverage)](https://sonarcloud.io/summary/new_code?id=ssobue_discrete-fourier-transform&branch=main)
 
 This project calculates the Discrete Fourier Transform (DFT). It is a compact
 Maven project written in Java.
