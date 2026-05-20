@@ -1,4 +1,4 @@
-package jp.sobue.math;
+package dev.sobue.math;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;

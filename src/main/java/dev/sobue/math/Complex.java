@@ -1,4 +1,4 @@
-package jp.sobue.math;
+package dev.sobue.math;
 
 /**
  * 複素数.

@@ -1,4 +1,4 @@
-package jp.sobue.math;
+package dev.sobue.math;
 
 import java.util.Arrays;
 import java.util.Objects;

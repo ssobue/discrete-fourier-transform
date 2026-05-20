@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 - `pom.xml`: Maven configuration (Java 25, Checkstyle, PMD, Surefire, Exec).
-- `src/main/java/jp/sobue/math/DiscreteFourierTransform.java`: Main implementation.
+- `src/main/java/dev/sobue/math/DiscreteFourierTransform.java`: Main implementation.
 - `src/test/java/...`: JUnit 5 tests (add here).
 - `.github/workflows/main.yaml`: CI runs `mvn --batch-mode verify`.
 - `target/`: Build artifacts (generated).
@@ -21,7 +21,7 @@ Prerequisite: Use JDK 25 (`actions/setup-java@v5` sets this in CI).
 - Style enforced by Checkstyle (Google checks) and PMD; builds fail on violations.
 - Indentation and formatting: follow Google Java Style; use UTF-8 encoding.
 - Naming: `PascalCase` classes, `camelCase` methods/fields, `UPPER_SNAKE_CASE` constants.
-- Packages under `jp.sobue.math`; keep classes small and focused.
+- Packages under `dev.sobue.math`; keep classes small and focused.
 
 ## Testing Guidelines
 - Framework: JUnit Jupiter (JUnit 5).

@@ -11,7 +11,7 @@ Maven project written in Java.
 discrete-fourier-transform/
   ├── pom.xml          # Maven build configuration
   ├── src/main/java/   # Java source code
-  │   └── jp/sobue/math/
+  │   └── dev/sobue/math/
   │       ├── Complex.java
   │       └── DiscreteFourierTransform.java
   └── .github/         # CI settings (GitHub Actions)
