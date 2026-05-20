@@ -27,8 +27,10 @@ public class DiscreteFourierTransform {
     double[] signal = args.length == 0 ? DEFAULT_SIGNAL : parseSignal(args);
     Complex[] spectrum = transform(signal);
 
-    LOGGER.info("Signal = {}", Arrays.toString(signal));
-    LOGGER.info("Spectrum = {}", Arrays.toString(spectrum));
+    if (LOGGER.isInfoEnabled()) {
+      LOGGER.info("Signal = {}", Arrays.toString(signal));
+      LOGGER.info("Spectrum = {}", Arrays.toString(spectrum));
+    }
   }
 
   /**
