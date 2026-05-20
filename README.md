@@ -11,7 +11,9 @@ Maven project written in Java.
 discrete-fourier-transform/
   ├── pom.xml          # Maven build configuration
   ├── src/main/java/   # Java source code
-  │   └── jp/sobue/math/DiscreteFourierTransform.java
+  │   └── jp/sobue/math/
+  │       ├── Complex.java
+  │       └── DiscreteFourierTransform.java
   └── .github/         # CI settings (GitHub Actions)
 ```
 GitHub Actions runs `mvn --batch-mode verify` with SonarQube Cloud analysis on
@@ -21,8 +23,11 @@ each push and pull request.
 ### DiscreteFourierTransform.java
 - Calculates forward DFT for real or complex-valued samples.
 - Calculates inverse DFT to reconstruct the original signal.
-- Represents complex values with a compact Java record.
 - After execution it prints the input signal and calculated spectrum.
+
+### Complex.java
+- Represents complex values with a compact Java record.
+- Provides the arithmetic used by the DFT implementation.
 
 ### pom.xml
 - Uses Java 25.
@@ -42,8 +47,8 @@ each push and pull request.
    - GitHub Actions automatically runs the Maven build and SonarQube Cloud
      analysis on each push and pull request.
 4. **Code Size**
-   - Only one Java file is included, making it easy to understand the project
-     quickly.
+   - The implementation is split into a DFT calculator and a compact complex
+     value type, making it easy to understand the project quickly.
 
 ## Further Learning
 - **DFT Basics** - Review how a time-domain signal is decomposed into
