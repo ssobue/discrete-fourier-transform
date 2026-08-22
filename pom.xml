@@ -39,14 +39,6 @@
         <junit-jupiter.version>6.1.3</junit-jupiter.version>
         <slf4j.version>2.0.18</slf4j.version>
         <logback.version>1.6.3</logback.version>
-        <!-- for SonarQube Cloud -->
-        <sonar.projectKey>ssobue_discrete-fourier-transform</sonar.projectKey>
-        <sonar.organization>ssobue</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.coverage.jacoco.xmlReportPaths>
-            ${project.reporting.outputDirectory}/jacoco/jacoco.xml
-        </sonar.coverage.jacoco.xmlReportPaths>
-        <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
     </properties>
 
     <dependencies>
@@ -68,21 +60,6 @@
             <scope>runtime</scope>
         </dependency>
     </dependencies>
-
-    <distributionManagement>
-        <repository>
-            <id>circle-ci</id>
-            <url>file:///tmp/artifacts</url>
-        </repository>
-        <snapshotRepository>
-            <id>circle-ci-snapshot</id>
-            <url>file:///tmp/artifacts</url>
-        </snapshotRepository>
-        <site>
-            <id>circle-ci-site</id>
-            <url>file:///tmp/artifacts</url>
-        </site>
-    </distributionManagement>
 
     <build>
         <plugins>
